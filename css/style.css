@@ -1,0 +1,311 @@
+/* cleaning */
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Golos Text;
+    background: #00365ECC;
+    color: #fff;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Header/Navbar */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-transform: uppercase;
+    height: 100px;
+    padding: 0 30px;
+}
+
+/* logo */
+.logo {
+    width: 215px;
+    height: auto;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop menu */
+.desktop-main-menu {
+    width: 100%;
+    margin-left: 1%;
+}
+
+/* Main menu select language image */
+.language {
+    width: 24px;
+    height: auto;
+}
+
+.desktop-main-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop-main-menu ul li {
+    margin-right: 20px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    text-align: left; 
+}
+
+.desktop-main-menu ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.desktop-main-menu ul li:last-child {
+    font-size: 16px;
+    display: none;
+}
+
+/* icons to main menu */
+.desktop-main-menu i {
+    color: #E83426;
+}
+
+.fa-sort-down {
+    margin-top: -5px;
+    margin-left: 3px;
+}
+.fa-bars {
+    margin-left: 3px;
+}
+
+/* Desktop left menu */
+.left-menu {
+  display: table;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  width: 17%;
+  background: transparent;
+  border-right: 1px solid white;
+  z-index:99999;
+}
+
+.desktop-left-menu {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.desktop-left-menu ul li {
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.desktop-left-menu ul li a {
+   margin-left: 32px;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 20px;
+   letter-spacing: 0.02em;
+   text-align: left;
+   text-transform: uppercase;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.active {
+   background: rgba(232, 52, 38, 0.3);
+   width: 100%;
+}
+
+/* Desktop left menu scrolldown item */
+.scrolldown {
+   width: 32px;
+   height: 32px;
+}
+
+
+/* Buttons */
+
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    /* min-width: 130px; */
+    padding: 0px 15px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #172F5B;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.button-info {
+    background-color: #E83426;
+    color: #fff;
+    padding: 5px 25px;
+    border: none;
+}
+
+
+/* Sections */
+section {
+    position: relative;
+    height: 100vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+/* Section a styles */
+
+/* section a */
+.section-a .section-inner {
+    position: absolute;
+    top: 210px;
+    left: 300px;
+    max-width: 830px;
+}
+
+.section-a-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-a .section-inner h1 {
+font-size: 54px;
+font-weight: 700;
+line-height: 60px;
+text-align: left;
+padding-bottom: 30px;
+border-bottom: 2px solid #E83426;
+}
+
+.section-a .section-inner p {
+width: 460px;
+padding-top: 20px;
+font-size: 18px;
+text-transform: none;
+}
+
+.button-contact {
+    margin-top: 40px;
+}
+
+/* Secrtion b */
+.section-b .section-b-about {
+    position: absolute;
+    top: 110px;
+    left: 300px;
+    max-width: 630px;
+}
+
+.section-b .section-inner h3 {
+    padding-top: 10px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+    
+}
+
+.section-b .section-inner p {
+    width: 460px;
+    padding-top: 20px;
+    font-size: 14px;
+    text-transform: none;
+    }
+
+.section-b .section-b-image {
+    padding-top: 100px;
+    width: 500px;
+    height: 100vh;
+    float: right;
+}
+
+.button-question {
+    padding: 10px 25px;
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+.button-presentaion {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 25px;
+    text-transform: none;
+}
+
+.radio-buttons {
+    padding-top: 30px;
+    margin-right: 10px;
+}
+
+.radio-buttons input {
+    margin-right: 5px;
+}
+
+
+/* Background images */
+.section-a {
+    background-image: url('../images/section-a.png');
+}
+
+.section-b {
+    background-image: url('../images/section-b.png');
+    background-repeat: inherit;
+}
+
+
+/* Desktop styles */
+@media(min-width:960px) {
+    .main-header {
+        padding-left: 3%;
+        padding-top: 2%;
+       
+    }
+} 
+
+@media(min-width: 1400px) {
+    .desktop-main-menu ul li:last-child {
+        display: inline;
+    }
+}
+
+
+
